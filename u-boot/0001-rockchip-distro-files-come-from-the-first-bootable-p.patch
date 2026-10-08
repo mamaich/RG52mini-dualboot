@@ -1,7 +1,7 @@
 From 469ae79875de4f3abc3f6e494ba93eb3916d420f Mon Sep 17 00:00:00 2001
 From: mamaich <mamaich.eng@gmail.com>
 Date: Thu, 8 Oct 2026 12:22:47 +0300
-Subject: [PATCH 1/2] rockchip: distro files come from the first bootable
+Subject: [PATCH 1/3] rockchip: distro files come from the first bootable
  partition
 
 "part list -bootable" leaves every bootable partition in devplist,
@@ -61,3 +61,6 @@ index 598f1a8aa6..7d21b2cd60 100644
  	snprintf(addr_str, sizeof(addr_str), "0x%lx", (ulong)buf);
  	snprintf(path, sizeof(path), "/%s", name);
  
+-- 
+2.43.0
+

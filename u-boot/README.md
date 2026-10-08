@@ -9,6 +9,7 @@
 |---|---|
 | `0001-rockchip-distro-files-come-from-the-first-bootable-p.patch` | дерево, логотип и картинки зарядки читаются с первого загрузочного раздела, а не со строки из всех сразу (с двумя такими разделами не читалось ничего) |
 | `0002-rg52mini-boot-menu-for-a-card-with-GammaOS-and-dArkO.patch` | само меню: `board/rockchip/evb_rk3562/rg52_bootmenu.c`, включается `CONFIG_RG52_BOOTMENU` в `rk3562-rg52mini_defconfig` |
+| `0003-rg52mini-bootmenu-also-on-a-power-on.patch` | меню и при включении кнопкой: тогда регистр режима пуст («boot mode: None»), и без этого первым шёл dArkOS, даже до первой настройки GammaOS |
 
 Наложить на свой клон форка:
 

@@ -1,0 +1,54 @@
+From 0ea01de2e9ed00500910a501ec030304596e6252 Mon Sep 17 00:00:00 2001
+From: mamaich <mamaich.eng@gmail.com>
+Date: Thu, 8 Oct 2026 18:23:00 +0300
+Subject: [PATCH 3/3] rg52mini: bootmenu: also on a power-on
+
+A power-on reads as "boot mode: None": the register holds BOOT_COLD.
+The menu only ran on BOOT_MODE_NORMAL, i.e. after a "reboot", so a
+power-on went straight to the distro boot, which takes the first
+bootable partition - dArkOS - even before GammaOS had finished its
+setup.
+
+Run it on every way into bootcmd: power-on, reboot, a reboot after a
+panic or a watchdog, and recovery, which has no image of its own on
+this card. Download, fastboot, DFU, UMS and charging stay with U-Boot.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+---
+ board/rockchip/evb_rk3562/rg52_bootmenu.c | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+diff --git a/board/rockchip/evb_rk3562/rg52_bootmenu.c b/board/rockchip/evb_rk3562/rg52_bootmenu.c
+index 84ba41e8f3..ee627f9fcd 100644
+--- a/board/rockchip/evb_rk3562/rg52_bootmenu.c
++++ b/board/rockchip/evb_rk3562/rg52_bootmenu.c
+@@ -383,8 +383,25 @@ void rg52_bootmenu(void)
+ 	struct bootmenu m = { 0 };
+ 	int i, saved;
+ 
+-	if (rockchip_get_boot_mode() != BOOT_MODE_NORMAL)
++	/*
++	 * Every way into bootcmd: without the menu the distro boot takes the
++	 * first bootable partition, dArkOS, whatever the state of GammaOS.
++	 * A power-on reads as "None" (the register holds BOOT_COLD), a reboot
++	 * after a panic or a watchdog is no different from "reboot", and
++	 * recovery (the misc BCB, "reboot recovery") has no image of its own on
++	 * this card. Download, fastboot, DFU, UMS and charging are served by
++	 * U-Boot itself.
++	 */
++	switch (rockchip_get_boot_mode()) {
++	case BOOT_MODE_NORMAL:
++	case BOOT_MODE_UNDEFINE:
++	case BOOT_MODE_PANIC:
++	case BOOT_MODE_WATCHDOG:
++	case BOOT_MODE_RECOVERY:
++		break;
++	default:
+ 		return;
++	}
+ 
+ 	/*
+ 	 * The card only. This check is what keeps the menu away from
+-- 
+2.43.0
+
