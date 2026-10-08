@@ -9,9 +9,9 @@
 | Образ | `RG52Mini-dualboot-<дата>.img.7z.001` … `.00N` — *заполнить при выпуске* |
 | sha256 образа | *заполнить при выпуске* |
 | Карта | от 32 ГБ |
-| GammaOS Next | *версия* — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
-| dArkOS | *сборка* — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
-| Загрузчик | [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini), ветка `dualboot` — `rg52mini-1.3` (разгонные таблицы CPU/GPU) плюс меню |
+| GammaOS Next | v1.9 — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
+| dArkOS | 10082026 — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
+| Загрузчик | [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini), ветка `next-dev`, `0ea01de2e9` — `rg52mini-1.3` (разгонные таблицы CPU/GPU) плюс меню; тот же, что в GammaOS Next v1.9 |
 
 ## Как записать
 
