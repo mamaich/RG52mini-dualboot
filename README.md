@@ -27,7 +27,7 @@ EmulationStation) — и меню выбора при включении. Тре
 |---|---|
 | GammaOS Next | [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) — образ карты из выпусков |
 | dArkOS | [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) — образ карты из выпусков, сборка 10082026 или новее |
-| Загрузчик с меню | [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini), ветка `dualboot`; патчи — в [`u-boot/`](u-boot) |
+| Загрузчик с меню | [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini), основная ветка `next-dev`; патчи — в [`u-boot/`](u-boot) |
 | Сборка карты | [`mk-dualboot.py`](mk-dualboot.py) — здесь |
 | Кадры меню | [`menu/`](menu) — здесь |
 
