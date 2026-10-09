@@ -12,7 +12,7 @@
 | Карта | от 32 ГБ |
 | GammaOS Next | [v1.9](https://github.com/mamaich/GammaOSNext-RG52mini/releases/tag/v1.9) — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
 | dArkOS | [10082026](https://github.com/mamaich/dArkOS_rg52mini/releases/tag/v10082026) — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
-| Загрузчик | [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini), ветка `next-dev`, `0ea01de2e9` — `rg52mini-1.3` (разгонные таблицы CPU/GPU) плюс меню; тот же, что в GammaOS Next v1.9 |
+| Загрузчик | [rg52mini-1.4](https://github.com/mamaich/u-boot-rk3562-rg52mini/releases/tag/rg52mini-1.4) (`0ea01de2e9`) — [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini): `rg52mini-1.3` (разгонные таблицы CPU/GPU) плюс меню; тот же, что в GammaOS Next v1.9 |
 
 ## Как записать
 
