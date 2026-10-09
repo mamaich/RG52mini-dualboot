@@ -6,17 +6,19 @@
 
 | | |
 |---|---|
-| Образ | `RG52Mini-dualboot-<дата>.img.7z.001` … `.00N` — *заполнить при выпуске* |
-| sha256 образа | *заполнить при выпуске* |
+| Образ | `RG52Mini-dualboot-20261008-2306.img.7z.001` … `.003` — архив 7z в трёх томах, 5,60 ГиБ (6 008 078 781 байт); суммы томов — в `SHA256SUMS` |
+| Образ после распаковки | `RG52Mini-dualboot-20261008-2306.img`, 16,93 ГиБ (18 183 373 824 байт) |
+| sha256 образа | `383f505833c2e4fbbf46bd7bd948ab4c64b7f66b730a7e0a0ed83914542c254e` |
 | Карта | от 32 ГБ |
-| GammaOS Next | v1.9 — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
-| dArkOS | 10082026 — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
+| GammaOS Next | [v1.9](https://github.com/mamaich/GammaOSNext-RG52mini/releases/tag/v1.9) — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
+| dArkOS | [10082026](https://github.com/mamaich/dArkOS_rg52mini/releases/tag/v10082026) — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
 | Загрузчик | [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini), ветка `next-dev`, `0ea01de2e9` — `rg52mini-1.3` (разгонные таблицы CPU/GPU) плюс меню; тот же, что в GammaOS Next v1.9 |
 
 ## Как записать
 
-Распакуйте тома архива (нужны все, распаковывается первый) и запишите `.img`
-на карту любой программой вроде Rufus, balenaEtcher или `dd`. Образ занимает
+Скачайте все три тома в одну папку и распакуйте первый, `.7z.001`, — 7-Zip
+сам подхватит остальные. Получившийся `.img` запишите на карту любой
+программой вроде Rufus, balenaEtcher или `dd`. Образ занимает
 около 17 ГБ, поэтому карта нужна от 32 ГБ. Внутреннюю память устройства
 образ не трогает.
 
@@ -53,7 +55,10 @@ dArkOS при этом запустится, но игр не увидит, по
 ### Обновления
 
 Обновления GammaOS по воздуху ставятся как обычно: начиная с GammaOS Next
-v1.9 в них тот же загрузчик с меню, что и на этой карте.
+v1.9 в них тот же загрузчик с меню, что и на этой карте. Первая загрузка после
+такого обновления проходит сразу в GammaOS, без меню: обновление перезаписывает
+её загрузочный раздел вместе с отметками для меню, и GammaOS возвращает их при
+запуске. Со следующего включения меню снова на месте.
 
 ## Подробности
 
