@@ -144,7 +144,7 @@ def legacy_darkos_fix(fat, workdir):
             break
     if new is None:
         sys.exit("образ dArkOS старше поддержки общей карты: на первом запуске он "
-                 "удалил бы раздел GammaOS. Нужна сборка 10082026 или новее")
+                 "удалил бы раздел GammaOS. Нужна dArkOS 1.0 (сборка 10082026) или новее")
     fstab = subprocess.run(["mtype", "-i", fat, "::/fstab.exfat"],
                            capture_output=True, check=True).stdout.decode()
     fstab = "".join(l for l in fstab.splitlines(True)

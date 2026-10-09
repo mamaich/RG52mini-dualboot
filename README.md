@@ -26,7 +26,7 @@ EmulationStation) — и меню выбора при включении. Тре
 | Часть | Откуда |
 |---|---|
 | GammaOS Next | [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) — образ карты из выпусков |
-| dArkOS | [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) — образ карты из выпусков, сборка 10082026 или новее |
+| dArkOS | [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) — образ карты из выпусков, 1.0 (сборка 10082026) или новее |
 | Загрузчик с меню | [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini), основная ветка `next-dev`; патчи — в [`u-boot/`](u-boot) |
 | Сборка карты | [`mk-dualboot.py`](mk-dualboot.py) — здесь |
 | Кадры меню | [`menu/`](menu) — здесь |
@@ -41,7 +41,7 @@ EmulationStation) — и меню выбора при включении. Тре
 
 | Выпуск | Дата | Коротко |
 |---|---|---|
-| [v1.0](https://github.com/mamaich/RG52mini-dualboot/releases/tag/v1.0) — [описание](doc/release-v1.0.md) | 09.10.2026 | Первый: GammaOS Next v1.9 и dArkOS 10082026, меню выбора, общие игры |
+| [v1.0](https://github.com/mamaich/RG52mini-dualboot/releases/tag/v1.0) — [описание](doc/release-v1.0.md) | 09.10.2026 | Первый: GammaOS Next v1.9 и dArkOS 1.0, меню выбора, общие игры |
 
 ## С чего начать
 
@@ -70,10 +70,10 @@ EmulationStation) — и меню выбора при включении. Тре
 | Меню в загрузчике | готово, проверено на устройстве: картинки, кнопки, запуск обеих систем и eMMC, меню при включении кнопкой |
 | Тот же загрузчик на карте с одной GammaOS | проверено на устройстве: меню не запускается, время загрузчика и частоты процессора, графики и памяти — как с прежним `rg52mini-1.3`, разгон и перезагрузка во внутреннюю память работают; лога загрузчика нет, порт был отключён |
 | Кадры меню | готово, 10 картинок RLE8 по ~50 КБ |
-| dArkOS: режим общей карты, игры из Android | готово, сборка 10082026: игры, темы, установщик PortMaster |
+| dArkOS: режим общей карты, игры из Android | готово, dArkOS 1.0 (10082026): игры, темы, установщик PortMaster |
 | GammaOS: флаги меню, растягивание `userdata` по имени | готово, входит в выпуск GammaOS Next v1.9 |
 | GammaOS: обновления по воздуху с загрузчиком с меню | готово: загрузчик [`rg52mini-1.4`](https://github.com/mamaich/u-boot-rk3562-rg52mini/releases/tag/rg52mini-1.4) в [GammaOS Next v1.9](https://github.com/mamaich/GammaOSNext-RG52mini/releases/tag/v1.9); обновление проверено на общей карте |
-| **Проверка на устройстве** | **пройдена** на образе из GammaOS Next v1.9 (кандидат) и dArkOS 10082026: первый запуск со свежей карты сразу в GammaOS, затем меню, первый запуск dArkOS, общие игры |
+| **Проверка на устройстве** | **пройдена** на образе из GammaOS Next v1.9 и dArkOS 1.0: первый запуск со свежей карты сразу в GammaOS, затем меню, первый запуск dArkOS, общие игры |
 
 ## Сборка
 
