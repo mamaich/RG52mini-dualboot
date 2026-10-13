@@ -13,7 +13,7 @@
 | sha256 образа | *заполнить при выпуске* |
 | Карта | от 32 ГБ |
 | GammaOS Next | [v1.9](https://github.com/mamaich/GammaOSNext-RG52mini/releases/tag/v1.9) (как в v1.0; новее пока нет) — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
-| dArkOS | 1.1 (сборка 10132026) — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
+| dArkOS | 1.1 (сборка *заполнить при выпуске*) — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
 | Загрузчик | [rg52mini-1.4](https://github.com/mamaich/u-boot-rk3562-rg52mini/releases/tag/rg52mini-1.4) — [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini) |
 
 ## Как записать
@@ -47,6 +47,11 @@ v1.1 карту нужно один раз перезаписать: в dArkOS 1
 * Кнопка питания: нажатие, пока устройство засыпает, будит его; нажатие сразу
   после пробуждения больше не теряется; после сна дольше двух минут
   устройство больше не засыпает снова через несколько секунд.
+* Заставка «black» в EmulationStation теперь усыпляет устройство так же, как
+  кнопка питания (или выключает его, если кнопка настроена на выключение), а
+  не только гасит подсветку. Одно нажатие питания будит устройство, экран
+  сразу загорается. Время — время заставки в EmulationStation, по умолчанию
+  5 минут, 0 отключает.
 
 GammaOS в образе та же, v1.9.
 
