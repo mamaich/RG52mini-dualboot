@@ -12,8 +12,8 @@
 | Образ | *заполнить при выпуске* |
 | sha256 образа | *заполнить при выпуске* |
 | Карта | от 32 ГБ |
-| GammaOS Next | *последняя на момент сборки* — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
-| dArkOS | 1.1 — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
+| GammaOS Next | [v1.9](https://github.com/mamaich/GammaOSNext-RG52mini/releases/tag/v1.9) (как в v1.0; новее пока нет) — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
+| dArkOS | 1.1 (сборка 10132026) — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
 | Загрузчик | [rg52mini-1.4](https://github.com/mamaich/u-boot-rk3562-rg52mini/releases/tag/rg52mini-1.4) — [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini) |
 
 ## Как записать
@@ -35,8 +35,20 @@
 Обновляться по воздуху можно начиная с 1.1, то есть с перехода 1.1 → 1.2. На
 v1.1 карту нужно один раз перезаписать: в dArkOS 1.0 обновления ещё нет.
 
-*Дополнить остальным, что нового в dArkOS 1.1 и в GammaOS, которая войдёт в
-образ.*
+### Остальное в dArkOS 1.1
+
+* Vulkan на портретной панели: flycast без RetroArch работает на Vulkan,
+  у слоя поворота появились режимы с масштабированием, DuckStation, PCSX2 и
+  PPSSPP-2021 на Vulkan показывают картинку в правильной ориентации.
+* gl4es: текстуры, в которые рисует сама программа, больше не читаются
+  чёрными.
+* Переключатель Bluetooth и пункт включения Wi-Fi в Wi-Fi Manager работают на
+  RG52 Mini.
+* Кнопка питания: нажатие, пока устройство засыпает, будит его; нажатие сразу
+  после пробуждения больше не теряется; после сна дольше двух минут
+  устройство больше не засыпает снова через несколько секунд.
+
+GammaOS в образе та же, v1.9.
 
 ## Подробности
 
