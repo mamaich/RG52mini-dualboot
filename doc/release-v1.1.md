@@ -13,7 +13,7 @@
 | sha256 образа | *заполнить при выпуске* |
 | Карта | от 32 ГБ |
 | GammaOS Next | [v1.9](https://github.com/mamaich/GammaOSNext-RG52mini/releases/tag/v1.9) (как в v1.0; новее пока нет) — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
-| dArkOS | 1.1 (сборка *заполнить при выпуске*) — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
+| dArkOS | 1.1 (сборка 10132026) — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
 | Загрузчик | [rg52mini-1.4](https://github.com/mamaich/u-boot-rk3562-rg52mini/releases/tag/rg52mini-1.4) — [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini) |
 
 ## Как записать
