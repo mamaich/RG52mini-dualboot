@@ -56,7 +56,7 @@ HEAD_FIRST, HEAD_END = 34, 16384    # за GPT и до раздела uboot
 # Где лежат исходники у владельца проекта: используются, только если
 # соответствующий ключ не задан и файлы на месте.
 OWNER_DEFAULTS = {
-    "gamma": os.path.join(HOME, "rg52/gamma/out/GammaOSCore-*.img"),
+    "gamma": os.path.join(HOME, "rg52/gamma/rel*/GammaOSCore-*.img"),
     "darkos": "/mnt/t/Dump/RG52Mini/dArkOS/img/dArkOS_*.img",
     # тот же образ, что идёт в выпуски GammaOS Next (с v1.9): её обновление
     # по воздуху перезаписывает раздел uboot
