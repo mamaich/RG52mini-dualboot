@@ -12,9 +12,9 @@ Nintendo 3DS в обеих системах, с общими папками иг
 
 | | |
 |---|---|
-| Образ | `RG52Mini-dualboot-ДАТА.img.7z.001` … `.003` — архив 7z в трёх томах, ? ГиБ (? байт); суммы томов — в `SHA256SUMS` |
-| Образ после распаковки | `RG52Mini-dualboot-ДАТА.img`, 16,93 ГиБ (18 183 373 824 байт) |
-| sha256 образа | `?` |
+| Образ | `RG52Mini-dualboot-20261026-0914.img.7z.001` … `.003` — архив 7z в трёх томах, 5,53 ГиБ (5 942 593 506 байт); суммы томов — в `SHA256SUMS` |
+| Образ после распаковки | `RG52Mini-dualboot-20261026-0914.img`, 16,93 ГиБ (18 183 373 824 байт) |
+| sha256 образа | `623ccca26eae7f5424af4d2f6232510373302cacf7f300437bbcd266726bae4b` |
 | Карта | от 32 ГБ |
 | GammaOS Next | [v1.14](https://github.com/mamaich/GammaOSNext-RG52mini/releases/tag/v1.14) — [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini) |
 | dArkOS | [1.3 (сборка 10252026)](https://github.com/mamaich/dArkOS_rg52mini/releases/tag/v1.3) — [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini) |
