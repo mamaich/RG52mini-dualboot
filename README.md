@@ -49,6 +49,7 @@ GammaOS в образе может отставать от свежей — эт
 
 | Выпуск | Дата | Коротко |
 |---|---|---|
+| [v1.4](https://github.com/mamaich/RG52mini-dualboot/releases/tag/v1.4) — [описание](doc/release-v1.4.md) | 31.10.2026 | GammaOS Next v1.15 и dArkOS 1.4: HDMI со звуком и игры с компьютера по USB в обеих системах, новые Dolphin, Azahar и flycast |
 | [v1.3](https://github.com/mamaich/RG52mini-dualboot/releases/tag/v1.3) — [описание](doc/release-v1.3.md) | 26.10.2026 | GammaOS Next v1.14 и dArkOS 1.3: Nintendo 3DS в обеих системах с общими играми и читами, PS2 на ARMSX2 в dArkOS |
 | [v1.2](https://github.com/mamaich/RG52mini-dualboot/releases/tag/v1.2) — [описание](doc/release-v1.2.md) | 19.10.2026 | GammaOS Next v1.12 и dArkOS 1.2: игры в папках друг друга, общие BIOS, первое обновление dArkOS по воздуху |
 | [v1.1](https://github.com/mamaich/RG52mini-dualboot/releases/tag/v1.1) — [описание](doc/release-v1.1.md) | 15.10.2026 | GammaOS Next v1.10 и dArkOS 1.1: dArkOS обновляется по воздуху, Vulkan, кнопка питания |
@@ -85,7 +86,7 @@ GammaOS в образе может отставать от свежей — эт
 | dArkOS: обновления по воздуху с учётом общей карты | готово в dArkOS 1.1; обновление 1.1 → 1.2 проверено на общей карте: разделы GammaOS, загрузчик и разметка не изменились |
 | GammaOS: флаги меню, растягивание `userdata` по имени | готово, входит в выпуск GammaOS Next v1.9 |
 | GammaOS: обновления по воздуху с загрузчиком с меню | готово: загрузчик [`rg52mini-1.4`](https://github.com/mamaich/u-boot-rk3562-rg52mini/releases/tag/rg52mini-1.4) в [GammaOS Next v1.9](https://github.com/mamaich/GammaOSNext-RG52mini/releases/tag/v1.9); обновление проверено на общей карте |
-| **Проверка на устройстве** | **пройдена** на образе v1.0 (GammaOS Next v1.9 и dArkOS 1.0): первый запуск со свежей карты сразу в GammaOS, затем меню, первый запуск dArkOS, общие игры; образ v1.1 (GammaOS Next v1.10 и dArkOS 1.1) проверен перед выпуском со свежей записи; GammaOS Next v1.12 и dArkOS 1.2 из образа v1.2 проверены обновлением по воздуху на общей карте; GammaOS Next v1.14 и dArkOS 1.3 из образа v1.3 — обновлением по воздуху на карте v1.2 |
+| **Проверка на устройстве** | **пройдена** на образе v1.0 (GammaOS Next v1.9 и dArkOS 1.0): первый запуск со свежей карты сразу в GammaOS, затем меню, первый запуск dArkOS, общие игры; образ v1.1 (GammaOS Next v1.10 и dArkOS 1.1) проверен перед выпуском со свежей записи; GammaOS Next v1.12 и dArkOS 1.2 из образа v1.2 проверены обновлением по воздуху на общей карте; GammaOS Next v1.14 и dArkOS 1.3 из образа v1.3 — обновлением по воздуху на карте v1.2; GammaOS Next v1.15 и dArkOS 1.4 из образа v1.4 — обновлением по воздуху на общей карте |
 
 ## Сборка
 
