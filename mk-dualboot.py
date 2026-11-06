@@ -58,9 +58,9 @@ HEAD_FIRST, HEAD_END = 34, 16384    # за GPT и до раздела uboot
 OWNER_DEFAULTS = {
     "gamma": os.path.join(HOME, "rg52/gamma/rel*/GammaOSCore-*.img"),
     "darkos": "/mnt/t/Dump/RG52Mini/dArkOS/img/dArkOS_*.img",
-    # тот же образ, что идёт в выпуски GammaOS Next (с v1.9): её обновление
-    # по воздуху перезаписывает раздел uboot
-    "uboot": "/mnt/t/Dump/RG52Mini/u-boot/build/uboot-menu-oc.img",
+    # тот же образ, что идёт в выпуски GammaOS Next (с v1.17 — rg52mini-1.5):
+    # её обновление по воздуху перезаписывает раздел uboot
+    "uboot": "/mnt/t/Dump/RG52Mini/u-boot/build/uboot-1.5-oc.img",
 }
 
 # GUID типа "Linux filesystem" — для разделов, у которых нет источника
