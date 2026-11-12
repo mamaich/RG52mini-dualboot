@@ -19,7 +19,7 @@ Code, Codex, Cursor и подобных. Здесь собрано то, чег�
 |---|---|---|
 | меню выбора, порядок загрузки, чтение файлов с FAT, опрос железа загрузчиком | [mamaich/u-boot-rk3562-rg52mini](https://github.com/mamaich/u-boot-rk3562-rg52mini), ветка `next-dev`, `board/rockchip/evb_rk3562/rg52_bootmenu.c` | [AGENTS.md](https://github.com/mamaich/u-boot-rk3562-rg52mini/blob/next-dev/AGENTS.md) |
 | флаги меню на FAT GammaOS (служба `rg52_bootmenu`), мастер первой настройки, OTA GammaOS | [mamaich/GammaOSNext-RG52mini](https://github.com/mamaich/GammaOSNext-RG52mini), ветка `develop` | [AGENTS.md](https://github.com/mamaich/GammaOSNext-RG52mini/blob/develop/AGENTS.md) |
-| как dArkOS узнаёт общую карту, монтирование ROMs из `userdata`, OTA dArkOS | [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini), правки — в ветку `develop` (выпуски собираются из `master`) | [AGENTS.md](https://github.com/mamaich/dArkOS_rg52mini/blob/master/AGENTS.md) |
+| как dArkOS узнаёт общую карту, монтирование ROMs из `userdata`, OTA dArkOS | [mamaich/dArkOS_rg52mini](https://github.com/mamaich/dArkOS_rg52mini), ветка `master` | [AGENTS.md](https://github.com/mamaich/dArkOS_rg52mini/blob/master/AGENTS.md) |
 | разметка карты, что кладётся на FAT dArkOS, кадры меню, описания выпусков | здесь | этот файл |
 
 | Путь | Что там |
