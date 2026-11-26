@@ -1,3 +1,6 @@
+> [!WARNING]
+> **Не нажимайте в dArkOS Options → Update на этой карте.** В dArkOS 1.0 этот пункт ещё от исходного dArkOS: он ставит обновления, собранные для других консолей, и на RG52 Mini они портят систему. Откатить их нельзя, поможет только перезапись карты. Обновления для RG52 Mini (Options → Update с откатом) есть в dArkOS начиная с 1.1, то есть на картах начиная с [v1.1](https://github.com/mamaich/RG52mini-dualboot/releases/tag/v1.1). Запишите [последний выпуск](https://github.com/mamaich/RG52mini-dualboot/releases/latest).
+
 # Выпуск v1.0
 
 Первый выпуск: одна SD-карта для **AISLPC RG52 Mini** (Rockchip RK3562) с
